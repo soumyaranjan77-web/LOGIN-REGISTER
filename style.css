@@ -1,0 +1,150 @@
+/* Google Fonts: 'Inter' for a clean, modern, and readable look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f6; /* Very light, soft grey/green tint */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Centered card layout width limits */
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px; /* Soft rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Minimal soft shadow */
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: #111;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly rounded inputs */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4A90E2; /* Soft blue focus color */
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15); /* Soft outer glow */
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #4A90E2; /* Soft primary blue */
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background-color: #357ABD; /* Slightly darker shift on hover */
+}
+
+.btn:active {
+    transform: scale(0.98); /* Very subtle button press effect */
+}
+
+.btn-danger {
+    background-color: #e74c3c; /* Red for logout */
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.link-text {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #666;
+}
+
+.link-text a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.link-text a:hover {
+    color: #357ABD;
+    text-decoration: underline; /* Clear visual feedback on links */
+}
+
+/* Flash Session Messages Styling */
+.flash-messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.flash-messages li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.flash-messages li.error {
+    background-color: #fdecea;
+    color: #e74c3c;
+    border: 1px solid #fad2cf;
+}
+
+.flash-messages li.success {
+    background-color: #e8f5e9;
+    color: #2ecc71;
+    border: 1px solid #c8e6c9;
+}
+
+/* Dashboard Specifics */
+.dashboard-content {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.user-email {
+    font-weight: 600;
+    color: #4A90E2;
+}
